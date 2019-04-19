@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Reset -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <title>Train Scheduler</title>
+</head>
+<body>
+
+        <div class="jumbotron">
+                <h1>Trains Train Trains!!!</h1>
+                <h4 id="currentTime"></h4>
+        </div>
+
+        <div class="trainInfo">
+            <h2>Current Train Schedule</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="addedTrains">
+            <h2>Add Train</h2>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Train Name</label>
+                    <input type="text" class="form-control-file" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Destination</label>
+                    <input type="text" class="form-control-file" id="dest">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">First Train Time (HH:mm - Military Time) </label>
+                    <input type="text" class="form-control-file" id="traintime">
+                </div>
+                        
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Frequency</label>
+                    <input type="text" class="form-control-file" id="freq">
+                </div> 
+                <button type="submit" id="add-train" id="addTrain">Submit</button>                                  
+            </form>
+        </div>
+
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- jQuery -->
+    <script  src="https://code.jquery.com/jquery-3.4.0.slim.min.js" integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
+    <!-- Javascript -->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

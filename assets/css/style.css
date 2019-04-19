@@ -1,0 +1,12 @@
+body {
+    background: url("../images/subway.jpg")
+}
+
+
+.jumbotron {
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    text-align: center;
+}

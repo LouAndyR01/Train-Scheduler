@@ -4,9 +4,29 @@ body {
 
 
 .jumbotron {
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
-    color: white;
-    background-color: black;
+    color: whitesmoke;
     text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid grey;
+    font-size: 60px;
+    font-family: 'Michroma', sans-serif;
+    background: navy;
 }
+
+.card-header {
+    font-family: 'Michroma', sans-serif;
+    background: navy;
+    color: whitesmoke;
+}
+
+.card {
+    margin-top: 20px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    font-family: 'Michroma', sans-serif;
+
+}
+

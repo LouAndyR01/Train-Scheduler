@@ -54,8 +54,6 @@
     // push train data to database //
         database.ref().push(newTrain);
 
-        alert("Your train has been added");
-
     // reset bootstrap text forms //
         $("#userTrainName").val("");
         $("#userDestination").val("");

@@ -1,5 +1,5 @@
 body {
-    background: url("../images/subway.jpg")
+    background: url("../images/subwaytile.jpg")
 }
 
 
@@ -10,28 +10,31 @@ body {
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
-    border: 3px solid grey;
+    border: 6px solid grey;
     font-size: 60px;
     font-family: 'Michroma', sans-serif;
-    background: navy;
+    background: #16202a;
     max-height: 275px;
 }
 
 .card-header {
     font-family: 'Michroma', sans-serif;
-    background: navy;
+    background: #16202a;
     color: whitesmoke;
 }
 
 .card {
     margin-top: 20px;
-    border: 3px solid grey;
+    border: 6px solid grey;
     border-radius: 10px;
     font-family: 'Michroma', sans-serif;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;
+    background: whitesmoke
 }
 
 p {
     font-size: 30px;   
     margin-top: 30px; 
 }
+
+

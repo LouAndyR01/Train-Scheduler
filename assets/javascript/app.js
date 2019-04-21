@@ -3,6 +3,7 @@
 //  initialize firebase. //
 //  pull information from the input forms and create new rows in table. //
 //  calculations for times of next arrival and frequency. //
+//  be sure to comment, comment, comment. //
 
  
     //  variables from the Firebase database. //
@@ -22,7 +23,7 @@
 
     // Display for the current time //
     var currentTime = null;
-    
+
         function updateTime() {
         currentTime = moment().format("HH:mm:ss");
         $("#currentTime").html(currentTime);

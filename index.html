@@ -25,11 +25,11 @@
     <div class ="container">
         <div class="jumbotron">
             <h1 class="text-center">Train Scheduler</h1>
-                <h3>...Going . nowhere . fast!</h3>
-            <!-- <h4 id="currentTime"></h4> -->
+                <h3>...Going . Nowhere . Fast!</h3>
+                <p class="pull-right" id="currentTime"></p>
         </div>
 
-        <div class="row">
+        <div class="card">
             <div class="col-md-12">
                 <div class="card mb-4">
                 <div class="card-header"><h3>Current Train Schedule</h3></div>
@@ -38,11 +38,13 @@
                     <table class="table table-sm table-hover" id="train-table">
                         <thead>
                           <tr>
-                          <th scope="col">Train Name</th>
-                          <th scope="col">Destination</th>
-                          <th scope="col">Frequency (min)</th>
-                          <th scope="col">Next Arrival</th>
-                          <th scope="col">Minutes Away</th>
+                          <th>Train Name</th>
+                          <th>Destination</th>
+                          <th class="text-center">Frequency (min)</th>
+                          <th class="text-center">Next Arrival</th>
+                          <th class="text-center">Minutes Away</th>
+                          <th class="text-center">Remove</th>
+                         
                           </tr>
                         </thead>
                         <tbody> 
@@ -53,7 +55,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="card">
             <div class ="col-md-12">
                 <div class="card md-4">
                     <div class="card-header"><h4>Add Train</h4></div>
@@ -69,7 +71,7 @@
                     </div>
 
                     <div class="form-group">
-                            <label for="firstTimeInput">First Train Time (HH:mm - Military Time)</label>
+                            <label for="firstTimeInput">First Train Time  (HH:mm - Military Time)</label>
                             <input type="text" class="form-control-file" id="firstTimeInput"></input>
                     </div>
 
@@ -85,8 +87,7 @@
             </div>
         </div>  
     </div>
-
-    <!-- Firebase link -->
+ 
     <!--jQuery / JavaScript Plugins  -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->

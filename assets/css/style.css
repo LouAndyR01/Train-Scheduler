@@ -10,7 +10,7 @@ body {
     text-align: center;
     margin-top: 20px;
     border-radius: 10px;
-    border: 6px solid grey;
+    border: 7px solid grey;
     font-size: 60px;
     font-family: 'Michroma', sans-serif;
     background: #16202a;
@@ -25,7 +25,7 @@ body {
 
 .card {
     margin-top: 20px;
-    border: 6px solid grey;
+    border: 7px solid grey;
     border-radius: 10px;
     font-family: 'Michroma', sans-serif;
     margin-bottom: 10px;
@@ -38,3 +38,6 @@ p {
 }
 
 
+.fab {
+    vertical-align: auto;
+}

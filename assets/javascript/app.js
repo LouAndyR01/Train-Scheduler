@@ -40,7 +40,7 @@
     // pulling info from the bootstrap input forms //
     var trainName = $("#userTrainName").val().trim();
     var trainDestination = $("#userDestination").val().trim();
-    var trainFirstTime = $("#firstTimeInput").val().trim();
+    var trainFirstTime = $("#firstTrainTime").val().trim();
     var trainFrequency = $("#trainFrequency").val().trim();
     
     // get values for the input fields //
@@ -60,7 +60,7 @@
         $("#userTrainName").val("");
         $("#userDestination").val("");
         $("#trainFrequency").val("");
-        $("#firstTimeInput").val("");   
+        $("#firstTrainTime").val("");   
     });
 
         database.ref().on("child_added", function(childSnapshot) {
@@ -79,16 +79,16 @@
     var timeDifference = moment().diff(moment(trainTimeCalc), "minutes");
 
     // calculates the remaining minutes //
-    var tRemainder = timeDifference % trainFrequency;
+    var timeRemainder = timeDifference % trainFrequency;
 
     // the next train arrival time in minutes //
-    var minNextTrain = trainFrequency - tRemainder;
+    var minNextTrain = trainFrequency - timeRemainder;
 
-    // the next arrival time of train
+    // the next arrival time of train //
     var nextArrival = moment().add(minNextTrain, "minutes");
     var nextTrainArrival = moment(nextArrival).format("hh:mm");
 
-    // append the rows of data for the new train data //
+    // append the rows of data for the new train data set //
     var newRow = $("<tr>").append(
         $("<td>").text(trainName),
         $("<td>").text(trainDestination),

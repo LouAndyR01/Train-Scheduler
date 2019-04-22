@@ -6,7 +6,7 @@
 //  be sure to comment, comment, comment. //
 
  
-    //  variables from the Firebase database. //
+    // variables from the Firebase database. //
     var config = {
         apiKey: "AIzaSyBG160XV5tiSVhkMBbKlgJee42O2JgfjUc",
         authDomain: "train-scheduler-db903.firebaseapp.com",
@@ -16,12 +16,12 @@
         messagingSenderId: "700791304460"
     };
 
-    //  Initializae Firebase //
+    // initialize Firebase //
         firebase.initializeApp(config);
 
     var database = firebase.database();
 
-    // Display for the current time //
+    // current time display //
     var currentTime = null;
 
         function updateTime() {
@@ -33,7 +33,7 @@
         setInterval(updateTime, 1000);
     });
 
-    //  adding new train info to the table //
+    // adding new train info to the table //
        $("#add-train-btn").on("click", function() {
         event.preventDefault();
 
@@ -96,5 +96,3 @@
     );
         $("#train-table > tbody").append(newRow);   
     });    
-
- 
